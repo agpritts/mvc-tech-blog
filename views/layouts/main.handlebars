@@ -9,12 +9,12 @@
 
     <div class="wrapper">
         <header>
-            <h1 class="px-3 py-3">Tech Blog</h1>
-            <nav class="navbar mt-2">
+            <h1>Tech Blog</h1>
+            <nav class="navbar">
                 {{#if loggedIn}}
                 <a href="/" class="navbar-item pt-1">Home</a>
                 <a href="/dashboard" class="navbar-item pt-1">Dashboard</a>
-                <a href="/dashboard/create/" class="navbar-item pt-1 mr-4">Post</a>
+                <a href="/dashboard/create/" class="navbar-item pt-1">Post</a>
                 <button id="logout" class="button">Logout</button>
                 {{else}}
                 <a href="/" class="navbar-item pt-1">Home</a>
@@ -27,18 +27,18 @@
                 {{{ body }}}
         </main>
 
-        <footer class="footer rows pb-2">
-            <div class="row-is-full content has-text-centered">
+        <footer class="footer">
+            <div>
                 <p>
-                <a href="/">Home</a>{{#if loggedIn}} | 
-                <a href="/dashboard/">Dashboard</a> | 
+                <a href="/">Home</a>{{#if loggedIn}}
+                <a href="/dashboard/">Dashboard</a>
                 <a href="/dashboard/create/">Post</a>
                 {{else}}
-                | <a href="/login/">Login</a>
+                    <a href="/login/">Login</a>
                 {{/if}}
                 </p>
             </div>
-        <div class="row-is-full content has-text-centered">
+        <div>
         <p>
         <h1>Tech Blog</h1>
         </p>
